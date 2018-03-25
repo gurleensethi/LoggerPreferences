@@ -126,7 +126,7 @@ D/LoggerPreferences: MainActivity has unregistered a OnSharedPreferenceChangeLis
 ```
 
 ### Tips
-LoggerPreferences uses the same tag when logging: `LoggerPreferences`. In your logcat search write `LoggerPreferences` to get all the logs.
+LoggerPreferences uses the same tag when logging: `LoggerPreferences`. In your logcat search `LoggerPreferences` to get all the logs.
 
 <img src="https://raw.githubusercontent.com/gurleensethi/LoggerPreferences/master/images/logger_tag.png" width="350"/>
 
