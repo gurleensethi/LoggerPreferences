@@ -45,7 +45,7 @@ public final class LoggerPreferences {
 
     //Alternate constructor to build object from SharedPreferences
     private LoggerPreferences(SharedPreferences sharedPreferences) {
-        sharedPreferences = sharedPreferences;
+        this.sharedPreferences = sharedPreferences;
         /*
         Initially targetObject is set itself in case user forgets to provide
         the target object.
