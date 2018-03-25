@@ -42,6 +42,7 @@ LoggerPreferences preferences = LoggerPreferences.get(getSharedPreferences("sp_f
         .with(this);
 ```
 You also have to call the function `with(Object)` and pass in the object which is responsible for interacting(changing/retrieving) with `SharedPreferences`. `with` takes in a parameter of type `Object`.
+If you don't call `with()` then by default `LoggerPreferences` will logged as the file name, so make sure to call `with()`.
 
 ### API
 LoggerPreferences is a wrapper around `SharedPreferences`. It has all the functions provided by `SharedPreferences` and works in exactly the same manner.
