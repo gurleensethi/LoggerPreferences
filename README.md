@@ -1,3 +1,4 @@
+[![](https://jitpack.io/v/gurleensethi/LoggerPreferences.svg)](https://jitpack.io/#gurleensethi/LoggerPreferences)
 # LoggerPreferences
 Get to know which class changed the value in SharedPreferences.
 
@@ -25,7 +26,6 @@ To enable logging, you have to initalize LoggerPreferences.
 LoggerPreferences.init(true, true);
 ```
 The first parameter tells LoggerPreferences to log everytime when a value is changed in `SharedPreferences` and the second parameter tells to log everytime a value is retrieved.
-###### Tip: Never log in production!
 
 ### Getting a Reference
 There are two ways you can obtain a reference.
@@ -124,3 +124,13 @@ D/LoggerPreferences: MainActivity is retrieving all values.
 D/LoggerPreferences: MainActivity has registered a OnSharedPreferenceChangeListener.
 D/LoggerPreferences: MainActivity has unregistered a OnSharedPreferenceChangeListener.
 ```
+
+### Tips
+LoggerPreferences uses the same tag when logging: `LoggerPreferences`. In your logcat search write `LoggerPreferences` to get all the logs.
+
+<img src="https://raw.githubusercontent.com/gurleensethi/LoggerPreferences/master/images/logger_tag.png" width="350"/>
+
+#### Never log in production!
+
+## Support
+If you have any idea or need a change in the library or found a bug, please [open an issue](https://github.com/gurleensethi/LoggerPreferences/issues/new).
