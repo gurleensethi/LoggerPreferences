@@ -17,18 +17,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         LoggerPreferences.init(true, true);
-        LoggerPreferences preferences = LoggerPreferences.get(getSharedPreferences("sp_file", Context.MODE_PRIVATE)).with(this);
+
+        LoggerPreferences preferences = LoggerPreferences.get(this, "sp_file", Context.MODE_PRIVATE)
+                .with(this);
 
         HashSet<String> set = new HashSet<>();
-        set.add("Test");
-        set.add("Testing!");
+        set.add("New Value");
+        set.add("Oh!");
+        set.add("I am in a set");
 
         preferences.edit()
                 .putInt("key_int", 123)
                 .putString("key_string", "new value")
-                .putBoolean("key_boolean", true)
-                .putFloat("key_float", 1.0f)
-                .putLong("key_long", 10000L)
+                .putBoolean("key_boolean", false)
+                .putFloat("key_float", 10.0f)
+                .putLong("key_long", 112320L)
                 .putStringSet("key_set", set)
                 .apply();
 
